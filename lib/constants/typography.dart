@@ -12,7 +12,8 @@
    fontFamily: 'Kumbh Sans'
  );
  const TextStyle buttonText = TextStyle(
-   fontSize: 16,
-   fontWeight: FontWeight.bold,
+   fontSize: 18,
+   fontWeight: FontWeight.w600,
+
    fontFamily: 'Kumbh Sans'
  );

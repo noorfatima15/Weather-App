@@ -15,6 +15,7 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorPalette.primaryColor,
       body: ListView(
+
         children: [
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.1
@@ -32,7 +33,7 @@ class WelcomeScreen extends StatelessWidget {
           ),
 
           Padding(
-            padding: Styles.padding,
+            padding: Styles.descriptionPadding,
             child: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
@@ -42,14 +43,16 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 TextSpan(
                   text: ' News & Feed',
-                  style: mainHeader.copyWith(color: ColorPalette.secondaryColor),
-                ),
-              ],
+                  style: mainHeader.copyWith(color: ColorPalette.secondaryColor)
+                )
+              ]
             ),
             ),
           ),
-         Text(Strings.descriptionText, style: descriptionText.copyWith(color: Colors.white), textAlign: TextAlign.center),
-      SizedBox(height: MediaQuery.of(context).size.height*0.02),
+         Padding(
+           padding: Styles.descriptionPadding,
+           child: Text(Strings.descriptionText, style: descriptionText.copyWith(color: Colors.white), textAlign: TextAlign.center),
+         ),
           PrimaryButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
           }, text: 'Get Started'),

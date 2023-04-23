@@ -11,7 +11,7 @@ class LinePainter extends CustomPainter {
     paint.shader = LinearGradient(
       colors: [ColorPalette.primaryColor.withOpacity(0.1),Colors.white.withOpacity(0.1), ColorPalette.primaryColor.withOpacity(0.1)],
     ).createShader(Rect.fromPoints(p1, p2));
-    paint.strokeWidth = 140;
+    paint.strokeWidth = 150;
 
     canvas.drawLine(p1, p2, paint);
   }
