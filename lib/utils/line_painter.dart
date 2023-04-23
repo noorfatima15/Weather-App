@@ -9,7 +9,7 @@ class LinePainter extends CustomPainter {
     final p2 = Offset(0, size.height);
     final paint = Paint();
     paint.shader = LinearGradient(
-      colors: [ColorPalette.primaryColor.withOpacity(0.1),Colors.white.withOpacity(0.1), ColorPalette.primaryColor.withOpacity(0.1)],
+      colors: [ColorPalette.primaryColor.withOpacity(0.1),ColorPalette.blurColor, ColorPalette.primaryColor.withOpacity(0.1)],
     ).createShader(Rect.fromPoints(p1, p2));
     paint.strokeWidth = 150;
 

@@ -12,7 +12,7 @@ class PrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Padding(
       padding: Styles.padding,
-      child: MaterialButton(onPressed: onPressed,color: ColorPalette.secondaryColor, shape:Styles.borderRadius,
+      child: MaterialButton(onPressed: onPressed,color: ColorPalette.secondaryColor, shape:Styles.buttonBorderRadius,
         minWidth: double.infinity,
         height: 50,
         child: Text(text, style: buttonText.copyWith(color: ColorPalette.primaryColor)),

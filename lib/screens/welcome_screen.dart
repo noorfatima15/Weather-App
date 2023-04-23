@@ -5,6 +5,7 @@ import 'package:weather_app/constants/strings.dart';
 import 'package:weather_app/constants/styles.dart';
 import 'package:weather_app/constants/typography.dart';
 import 'package:weather_app/core/widgets/primary_button.dart';
+import 'package:weather_app/core/widgets/rich_text_span.dart';
 import 'package:weather_app/screens/home_screen.dart';
 import 'package:weather_app/utils/line_painter.dart';
 class WelcomeScreen extends StatelessWidget {
@@ -32,21 +33,11 @@ class WelcomeScreen extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.05
           ),
 
-          Padding(
+          const Padding(
             padding: Styles.descriptionPadding,
-            child: RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-              text: 'Weather',
-
-              style: mainHeader,
-              children: [
-                TextSpan(
-                  text: ' News & Feed',
-                  style: mainHeader.copyWith(color: ColorPalette.secondaryColor)
-                )
-              ]
-            ),
+            child: RichTextSpan(
+              firstText: 'Weather ',
+              secondText: 'News & Feed'
             ),
           ),
          Padding(
