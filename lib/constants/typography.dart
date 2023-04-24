@@ -32,3 +32,8 @@ const TextStyle mainTemprature = TextStyle(
    fontWeight: FontWeight.w700,
    fontFamily: 'Kumbh Sans'
  );
+const TextStyle tileUnitStyle = TextStyle(
+   fontSize: 10,
+   fontWeight: FontWeight.w600,
+   fontFamily: 'Kumbh Sans'
+ );
